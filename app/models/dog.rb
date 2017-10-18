@@ -1,6 +1,7 @@
 class Dog
   attr_accessor :name, :breed, :age
 
+  @@all = []
   def initialize(name, breed, age)
     # attrs.map { |k, v| self.send("#{k}=", v)}
     @name = name
@@ -9,6 +10,6 @@ class Dog
   end
 
   def self.all
-
+    @@all
   end
 end

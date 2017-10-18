@@ -1,8 +1,8 @@
 class Dog
-  attrs = ["name", "breed", "age"]
+  attr_accessor :name, :breed, :age
 
-  def initialize(attrs)
-    attrs.map { |k, v| self.send("#{k}=", v)}
+  def initialize(name:, breed:, age:)
+    # attrs.map { |k, v| self.send("#{k}=", v)}
   end
 
 
